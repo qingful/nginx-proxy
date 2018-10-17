@@ -1,2 +1,2 @@
-FROM neilpang/nginx-proxy:latest
+FROM jwilder/nginx-proxy:latest
 COPY nginx.tmpl /app/nginx.tmpl

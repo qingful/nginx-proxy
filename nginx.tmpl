@@ -180,7 +180,7 @@ server {
 upstream {{ $upstream_name }} {
 {{ if ne $ip_hash "0" }} 
 	# enable sticky session with either "hash" (uses the complete IP address)
-    hash $remote_addr consistent;
+	hash $remote_addr consistent;
 {{ end }}
 
 {{ range $container := $containers }}
